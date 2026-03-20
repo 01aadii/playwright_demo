@@ -1,6 +1,5 @@
 pipeline {
-    agent any
-
+    agent { label 'python-agent' }
     stages {
         stage('Clone') {
             steps {
